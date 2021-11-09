@@ -16,4 +16,4 @@ Once the dependencies are installed, simply run the `test.py` script to test out
 -----------------------------
 
 To run one or more scripts in the simulator, use `run.py`, passing it the file names.
-The robot had to drive across the whole arena, in which the golden token reperesented an obstacol to avoid and the silver token the target to move.
+The robot had to drive across the whole arena, in which the golden token reperesented an obstacol to avoid and the silver token the target to move. [Arena image ](Arena.jpg)
