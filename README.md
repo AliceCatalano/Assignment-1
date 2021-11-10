@@ -68,7 +68,7 @@ Each `Marker` object has the following attributes:
 * `timestamp`: the time at which the marker was seen (when `R.see` was called).
 
 ### Behaviour Management ###
-After that the robot sees the token, based on the `marker_type`, it has to run different actions, as described in the flowchart. For this reason, 2 sets of functions are used.
+After that the robot sees the token, based on the `marker_type`, it has to run different actions, as described in the [flowchart](flowchart.pdf). For this reason, 2 sets of functions are used.
 
 * Actions for the silver token:
   * `find_silver token` : Function to find the closest silver token.
