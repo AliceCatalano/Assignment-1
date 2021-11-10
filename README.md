@@ -68,22 +68,23 @@ Each `Marker` object has the following attributes:
 * `timestamp`: the time at which the marker was seen (when `R.see` was called).
 
 ### Behaviour Management ###
-After that the robot sees the token, based on the `marker_type`, it has to run different actions, as described in the flowchart. For this reason, 2 sets of functions are used-
+After that the robot sees the token, based on the `marker_type`, it has to run different actions, as described in the flowchart. For this reason, 2 sets of functions are used.
+
 * Actions for the silver token:
-  * `find_silver token` : function to find the closest silver token.
-  * `traj_adjustment(rot_y)` : function to adjust the orientation of the robot toward the nearest silver token, takes as argument the orientation about the Y axis in degrees.
-  * `changeBool(dist, silver)` : function to change the boolean value of the silver token.
-* To this set of function the following variables are related:
+  * `find_silver token` : Function to find the closest silver token.
+  * `traj_adjustment(rot_y)` : Function to adjust the orientation of the robot toward the nearest silver token, takes as argument the orientation about the Y axis in degrees.
+  * `changeBool(dist, silver)` : Function to change the boolean value of the silver token.
+* To this set of functions the following variables are related:
   * `a_th=2.0` : (float) Threshold for the control of the linear orientation of the silver token alignment.
   * `d_th= 0.7`: (float) Threshold for the control of the distance from the silver token.
   * `s_th=60.0` : (float) Threshold for the control of linear orientation for the silver token perception.
-  * `silver=True` : (boolean) variable for letting the robot know if it has to look for a silver or for a golden marker.
+  * `silver=True` : (boolean) Variable for letting the robot know if it has to look for a silver or for a golden marker.
 
 * Actions for the golden token:
   * `find_golden token` : Function to find the closest golden token.
   * `gold_manage(dist, rot_y)` : Function to manage the behaviour of the robot when a golden token  is seen in its threshold, takes as argument the distance of the closest golden token and the orientation about the Y axis in degrees.
   * `sideView()` : Function to check on the side  of the robot and choose the side without near golden token.
-* To this set of function the following variables are related:
+* To this set of functions the following variables are related:
   * `ang_th= 80.0` : (float) Threshold for the control of the linear orientation of the golden token alignment.
   * `dist_th=0.8`: (float) Threshold for the control of the distance from the golden token.
 
