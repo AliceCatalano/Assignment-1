@@ -3,7 +3,7 @@ first assignment solution
 Python Robotics Simulator 
 ===========================
 
-This is a simple, portable robot simulator modified by me from the exercise given by [CarmineD8] (https://github.com/CarmineD8/python_simulator).
+This is a simple, portable robot simulator modified by me from the exercise given by [CarmineD8](https://github.com/CarmineD8/python_simulator).
 
 Installing and running
 ----------------------
